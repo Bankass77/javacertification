@@ -1,0 +1,18 @@
+
+“	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÛÑŒ8İâªô1J$aa59e333-3d48-473d-8a51-4a3a20f3d6d4
+k
+java:S1604"(Make this anonymous inner class a lambda(ş†ìõ8İâªô1J$90fcf6d5-9857-40ad-a319-39a3fcd810bf
+ƒ
+java:S1854!";Remove this useless assignment to local variable "sprint2".(Çà¢Àúÿÿÿÿ8“İâªô1J$2ccfc74b-4f8b-45c1-99ff-df27b2451768
+r	java:S106
+"+Replace this use of System.out by a logger.(‚ŞÏ¥ıÿÿÿÿ8•İâªô1J$0c792f15-5a67-4dde-a4f3-fa02b8b02e28
+m
+java:S1905"*Remove this unnecessary cast to "Integer".(ÀÛÑŒ8•İâªô1J$33e907f7-5409-40b4-aa82-420b4ba97b1e
+l	java:S106"+Replace this use of System.out by a logger.(ïô»q8–İâªô1J$81e34e4d-7ba6-4b8f-a336-dbcc8ae69bfa
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(Ô†£ûÿÿÿÿ8–İâªô1J$cf37ce65-014e-469b-bee6-2e89dce4829a
+m	java:S106"+Replace this use of System.out by a logger.(ëÁ¯ı8—İâªô1J$b964fe42-e572-4c1b-8550-e72675cc9395
+ˆ
+java:S1612!"@Replace this lambda with method reference 'System.out::println'.(Çà¢Àúÿÿÿÿ8˜İâªô1J$c6a6b1cb-e605-4371-8d85-a44b4a40977c
+r	java:S106!"+Replace this use of System.out by a logger.(Çà¢Àúÿÿÿÿ8˜İâªô1J$24a6731e-b39f-4eb7-9941-4c219074fa5c
+t
+java:S1481!",Remove this unused "sprint2" local variable.(Çà¢Àúÿÿÿÿ8™İâªô1J$26d2e624-620b-4013-a233-40f9580cf82d
