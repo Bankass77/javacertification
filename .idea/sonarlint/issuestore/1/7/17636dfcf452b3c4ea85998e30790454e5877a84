@@ -1,0 +1,23 @@
+
+|
+java:S1611"4Remove the parentheses around the "animal" parameter(ñ‰¹ˆıÿÿÿÿ8æ˜ßøó1J$28320b17-6130-4b8c-95dd-458883fb5539
+ƒ
+java:S1612";Replace this lambda with method reference 'Animal::canHop'.(ñ‰¹ˆıÿÿÿÿ8ç˜ßøó1J$ddcc5552-95fb-449e-8b0d-e82a480f5410
+r	java:S106	"+Replace this use of System.out by a logger.(º£ò®üÿÿÿÿ8ßÌàøó1J$3e789a37-232e-40b4-9fa3-a54423c72d57
+–
+java:S1602
+"SRemove useless curly braces around statement and then remove useless return keyword(»Âïã8è˜ßøó1J$b0ea3d64-66a7-4090-8bd6-13af8700cdac
+
+java:S1612
+"<Replace this lambda with method reference 'Animal::canSwim'.(»Âïã8é˜ßøó1J$979bb6a5-047b-484d-b904-1c8c237ae875
+r	java:S106"+Replace this use of System.out by a logger.(‹ğèùùÿÿÿÿ8¬áøó1J$540f243a-a826-4735-a8c1-c90c6c8000e6
+–
+java:S1602"SRemove useless curly braces around statement and then remove useless return keyword(ñÔªß8àÌàøó1J$680a9f9b-b935-4684-b46c-523dc9b1b354
+~
+java:S1612";Replace this lambda with method reference 'Animal::canHop'.(ñÔªß8é˜ßøó1J$3c604a6e-4758-44c1-a330-7babc5df1049
+r	java:S106"+Replace this use of System.out by a logger.(¿Ôçêÿÿÿÿÿ8ÑÜáøó1J$bcfeb3e9-e739-4889-8d80-c5dcff28dc7d
+„
+java:S1612"<Replace this lambda with method reference 'Animal::canSwim'.(šœĞÎøÿÿÿÿ8áÌàøó1J$3b495fbb-5685-4edd-a381-4ad96a174bec
+r	java:S106"+Replace this use of System.out by a logger.(©œäüÿÿÿÿ8÷”âøó1J$8e570330-c2b8-4a5e-9442-4befb090d50a
+ƒ
+java:S1128";Remove this unused import 'java.security.PrivilegedAction'.(£Şóšùÿÿÿÿ8Ííàøó1J$7a3b2b72-75aa-4030-80e5-43bb050d2d5e
