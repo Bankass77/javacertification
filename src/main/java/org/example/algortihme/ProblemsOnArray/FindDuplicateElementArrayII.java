@@ -17,22 +17,22 @@ public class FindDuplicateElementArrayII {
 
     public static int findDuplicate(int[] array) {
         int duplicate = -1;
-        for(int value: array){
-            int val = value <0 ? -value : value;
+        for (int value : array) {
+            int val = value < 0 ? -value : value;
 
             // Rendre négatif l'élément à l'index `val` s'il est positif
-            if( array[val] >=0){
-                array[val] = - array[val];
-            }else {
+            if (array[val] >= 0) {
+                array[val] = -array[val];
+            } else {
                 duplicate = val;
                 break;
             }
         }
         // Restaurer le tableau original avant de retourner
-        for( int i=0; i<array.length; i++){
+        for (int i = 0; i < array.length; i++) {
 
             // Rendre positifs les éléments négatifs
-            if(array[i] <0){
+            if (array[i] < 0) {
                 array[i] = -array[i];
             }
         }
@@ -41,7 +41,7 @@ public class FindDuplicateElementArrayII {
     }
 
     public static void main(String[] args) {
-        int [] nums= { 1, 2, 3, 4, 2 };
-       System.out.println("L'élément en double est: "+findDuplicate(nums));
+        int[] nums = {1, 2, 3, 4, 2};
+        System.out.println("L'élément en double est: " + findDuplicate(nums));
     }
 }

@@ -1,6 +1,5 @@
-package org.example.java10.typeinference;
+package org.example.java10.collectionApiEnhancements;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

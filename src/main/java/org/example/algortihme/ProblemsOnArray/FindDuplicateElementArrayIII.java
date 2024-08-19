@@ -9,24 +9,24 @@ package org.example.algortihme.ProblemsOnArray;
 public class FindDuplicateElementArrayIII {
 
 
-     public  static int findDuplicate(int[] nums) {
-         int xor = 0;
+    public static int findDuplicate(int[] nums) {
+        int xor = 0;
 
-         // prend le xor de tous les éléments du tableau
-         for(int value: nums){
-             xor = xor ^ value; // xor ^=value
+        // prend le xor de tous les éléments du tableau
+        for (int value : nums) {
+            xor = xor ^ value; // xor ^=value
 
-         }
-         // prend le xor de tous les éléments du tableau de 1 à nums.lenght-1
-         for( int i = 1; i<= nums.length-1; i++) {
-             xor = xor ^ i;
-         }
-         return xor;
-     }
+        }
+        // prend le xor de tous les éléments du tableau de 1 à nums.lenght-1
+        for (int i = 1; i <= nums.length - 1; i++) {
+            xor = xor ^ i;
+        }
+        return xor;
+    }
 
     public static void main(String[] args) {
-        int [] nums =  { 1, 2, 3, 4, 2 };
+        int[] nums = {1, 2, 3, 4, 2};
 
-        System.out.println("L'élement en doublon est: "+findDuplicate(nums));
+        System.out.println("L'élement en doublon est: " + findDuplicate(nums));
     }
 }

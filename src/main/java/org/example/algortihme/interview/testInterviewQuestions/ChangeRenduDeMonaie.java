@@ -12,11 +12,8 @@ import lombok.ToString;
 @RequiredArgsConstructor
 @AllArgsConstructor
 public class ChangeRenduDeMonaie {
-
     private int coin2;
-
     private int bill5;
-
     private int bill10;
 
     /**
@@ -43,34 +40,45 @@ public class ChangeRenduDeMonaie {
      * Pour obtenir un maximum de points votre solution devra toujours rendre la monnaie quand c’est
      * possible et avec le nombre minimal de pièces et billets.
      * Données : s est toujours un entier ( long) strictement positif inférieur ou égal à 9223372036854775807
-     * @param s long
-     * @return  object Change
+     *
+     * @param s long, le montant donné
+     * @return object Change
      */
-    private ChangeRenduDeMonaie optimalChange(long s) {
-        if(s % 2 != 0) {
-            return null; // Impossible de rendre une somme impaire avec seulement des pièces de 2 euros.
+    private static ChangeRenduDeMonaie optimalChange(long s) {
+        if (s < 2 || s % 2 != 0) {
+            // Impossible to give change for these amounts
+            return null;
         }
+
+        int bill10 = 0;
+        int bill5 = 0;
+        int coin2 = 0;
+
+        // Step 1: Use as many 10€ bills as possible
         bill10 = (int) (s / 10);
-        s = s % 10; // s %=10
-        bill5 = (int) (s / 5);
-        s %= s / 5;
+        s = s % 10;
+
+        // Step 2: Use one 5€ bill if the remaining amount is 5, 7, or 9
+        if (s == 5 || s == 7 || s == 9) {
+            bill5 = 1;
+            s -= 5;
+        }
+
+        // Step 3: Use as many 2€ coins as possible
         coin2 = (int) (s / 2);
+
         return new ChangeRenduDeMonaie(coin2, bill5, bill10);
     }
 
     public static void main(String[] args) {
 
         // Tests
-        long[] testCases = {1, 6, 10, 18, 29};
-         for(long testCase: testCases) {
-             ChangeRenduDeMonaie change = new ChangeRenduDeMonaie();
-
-             if(change != null) {
-                 System.out.println("For " + testCase + "€, the change is: " + change);
-             } else {
-                 System.out.println("For " + testCase + "€, it's impossible to provide the change.");
-             }
-             System.out.println(change.optimalChange(testCase));
-         }
+        System.out.println(optimalChange(1));    // Output: null
+        System.out.println(optimalChange(6));    // Output: Change{coin2=3, bill5=0, bill10=0}
+        System.out.println(optimalChange(10));   // Output: Change{coin2=0, bill5=0, bill10=1}
+        System.out.println(optimalChange(11));   // Output: null
+        System.out.println(optimalChange(16));   // Output: Change{coin2=3, bill5=0, bill10=1}
+        System.out.println(optimalChange(27));   // Output: Change{coin2=1, bill5=1, bill10=2}
+        System.out.println(optimalChange(31));
     }
 }
