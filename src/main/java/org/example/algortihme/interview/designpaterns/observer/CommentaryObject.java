@@ -2,6 +2,9 @@ package org.example.algortihme.interview.designpaterns.observer;
 
 import java.util.List;
 
+/**
+ * ConcreteSubject class
+ */
 public class CommentaryObject implements Subject, Commentary {
 
     private final List<Observer> observers;

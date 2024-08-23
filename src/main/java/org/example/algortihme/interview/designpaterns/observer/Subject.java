@@ -1,6 +1,8 @@
 package org.example.algortihme.interview.designpaterns.observer;
 
-
+/**
+ * Subject class
+ */
 public interface Subject {
     /**
      * This method is used to subscribe observers, we can say register the observers so that if there is a change

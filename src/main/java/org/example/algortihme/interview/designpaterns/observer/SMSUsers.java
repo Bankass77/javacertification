@@ -1,9 +1,12 @@
 package org.example.algortihme.interview.designpaterns.observer;
 
+/**
+ * ConcreteObserver class
+ */
 public class SMSUsers implements Observer {
     private final Subject subject;
     private String description;
-    private String userInfo;
+    private final String userInfo;
 
     public SMSUsers(Subject subject, String userInfo) {
         if (subject == null){

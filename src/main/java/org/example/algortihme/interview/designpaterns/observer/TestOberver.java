@@ -2,6 +2,9 @@ package org.example.algortihme.interview.designpaterns.observer;
 
 import java.util.ArrayList;
 
+/**
+ * Client code
+ */
 public class TestOberver {
     public static void main(String[] args) {
         Subject subject = new CommentaryObject(new ArrayList<Observer>(), "Soccer Match [2024AUG24]");
