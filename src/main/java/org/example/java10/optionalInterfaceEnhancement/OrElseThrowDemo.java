@@ -1,3 +1,4 @@
+/*
 package org.example.java10.optionalInterfaceEnhancement;
 
 import org.example.java9.collectionsAPiUpdate.Employee;
@@ -27,3 +28,4 @@ public class OrElseThrowDemo {
         }
     }
 }
+*/

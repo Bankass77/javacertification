@@ -1,3 +1,4 @@
+/*
 package org.example.java10.streamApiEnhancement;
 
 import org.example.java9.collectionsAPiUpdate.Employee;
@@ -56,3 +57,4 @@ public class UnmodefiableDemo {
 
    // public  static <T,K,U> Collector <T,?,Map<K,U>> toUnmodifiableMap(Function<? super T,? extends  keyFunction> key, Function<? super T , ? extends valueFunction>) {}
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package org.example.java9.collectionsAPiUpdate;
 
 import java.io.FileOutputStream;
@@ -24,3 +25,4 @@ public class EmployeeDataGenerator {
     }
 
 }
+*/

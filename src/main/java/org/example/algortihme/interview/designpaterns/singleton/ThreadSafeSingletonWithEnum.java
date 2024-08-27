@@ -1,5 +1,8 @@
 package org.example.algortihme.interview.designpaterns.singleton;
 
+/**
+ * Création du Singleton avec un enum
+ */
 public enum ThreadSafeSingletonWithEnum {
     SINGLETON_INSTANCE;
     public void display(){
