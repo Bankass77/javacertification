@@ -1,5 +1,9 @@
 package org.example.algortihme.interview.testInterviewQuestions;
 
+/**
+ *
+ * Cette classe permet de chercher une valeur v dans un ensemble de Node
+ */
 public class Node {
 
     private int value;
@@ -14,6 +18,11 @@ public class Node {
         this.right = null;
     }
 
+    /**
+     *
+     * @param v valeur donnée à chercher
+     * @return le Node qui a la valeur v recherchée.
+     */
     private Node find(int v) {
         Node current = this;
         while(current != null) {

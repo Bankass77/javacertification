@@ -12,12 +12,12 @@ package org.example.algortihme.ProblemsOnArray;
  *    22    35
  * You can assume each node has a parent pointer.
  */
-public class TreeNode {
+public class Node {
    private int val;
-   private TreeNode left;
-   private TreeNode right;
-   private TreeNode parent;
-   public TreeNode(int val) {
+   private Node left;
+   private Node right;
+   private Node parent;
+   public Node(int val) {
        this.val = val;
        this.left = null;
        this.right = null;
@@ -26,23 +26,23 @@ public class TreeNode {
 
     /**
      * Cette méthode trouve le successeur en ordre d'un noeud
-     * @param treeNode
+     * @param node  le Node successeur
      * @return le node successeur en ordre d'un noeud
      */
-    public TreeNode findSuccessor( TreeNode treeNode){
+    public Node findSuccessor(Node node){
 
-        if( treeNode == null){
+        if( node == null){
             return null;
         }
         //cas le node à un enfant droit
-        if( treeNode.right != null){
-            return findMin(treeNode.right);
+        if( node.right != null){
+            return findMin(node.right);
         }
 
         // cas où le node n'a pas d'enfant droit
-        TreeNode parent = treeNode.parent;
-        if( parent != null && treeNode == parent.right){
-            treeNode = parent;
+        Node parent = node.parent;
+        if( parent != null && node == parent.right){
+            parent = node;
             parent = parent.parent;
         }
         return parent;
@@ -50,22 +50,22 @@ public class TreeNode {
 
     /**
      * Cette méthode trouve le noeud ayant la plus pétite valeur(le plus à gauche) dans un sous arbre donné.
-     * @param treeNode
-     * @return
+     * @param node à chercher.
+     * @return Node qui possède la plus petite valeur.
      */
-    private TreeNode findMin( TreeNode treeNode) {
-        while( treeNode.left !=null){
-            treeNode = treeNode.left;
+    private Node findMin(Node node) {
+        while( node.left !=null){
+            node = node.left;
         }
-        return treeNode;
+        return node;
     }
 
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(10);
-        TreeNode node5 = new TreeNode(5);
-        TreeNode node30 = new TreeNode(30);
-        TreeNode node22 = new TreeNode(22);
-        TreeNode node35 = new TreeNode(35);
+        Node root = new Node(10);
+        Node node5 = new Node(5);
+        Node node30 = new Node(30);
+        Node node22 = new Node(22);
+        Node node35 = new Node(35);
 
         //Construction de l'arbre
         root.left = node5;
@@ -80,7 +80,7 @@ public class TreeNode {
         node30.right = node35;
 
         // Recherche du successeur de 22 (le résultat attendu est 30)
-        TreeNode successor = root.findSuccessor(root);
+        Node successor = root.findSuccessor(root);
         if( successor != null){
             System.out.println("le successeur en ordre est : "+successor.val);
         }else {
