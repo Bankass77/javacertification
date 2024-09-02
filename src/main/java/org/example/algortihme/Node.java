@@ -14,6 +14,10 @@ public class Node {
     // Set pour garder la trace des nœuds visités
     private Set<Node> visitedNode= new HashSet<>();
 
+    public Node(final int value) {
+        this.value = value;
+    }
+
     public void inOrderTraversal( Node node){
         if( node !=null){
             inOrderTraversal(node.left);
