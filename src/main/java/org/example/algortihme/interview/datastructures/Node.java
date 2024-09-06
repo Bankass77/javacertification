@@ -1,8 +1,8 @@
 package org.example.algortihme.interview.datastructures;
 
 public class Node {
-    private Node next;  // La référence vers le noeud suivant
-    private int data; // Donnée contenue dans le noeud
+    public Node next;  // La référence vers le noeud suivant
+    public int data; // Donnée contenue dans le noeud
 
     // Constructeur pour initialiser le noeud
     public Node(int d) {
