@@ -30,8 +30,7 @@ public class ArraySubSet {
         if (current.size() >= 2) {
             result.add(new ArrayList<>(current));
         }
-        // prend un ensemble pour garder une trace des éléments traités
-        Set<Integer> set = new HashSet<>();
+
         for (int i = start; i < nums.length; i++) {
             if (current.isEmpty() || nums[i] > current.peekLast()) {
                 current.addLast(nums[i]);
