@@ -30,7 +30,7 @@ public class PrintAllTripletsSolution {
         }
         Arrays.sort(arr);
 
-        for (int i = 0; i < arr.length - 3; i++) {
+        for (int i = 0; i < arr.length - 1; i++) {
             int high = arr.length - 1;
             int low = i + 1;
             while (low < high) {
