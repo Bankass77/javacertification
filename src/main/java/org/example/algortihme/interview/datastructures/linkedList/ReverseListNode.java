@@ -26,6 +26,9 @@ public class ReverseListNode {
             prev = curr;                // déplacer  prev à curr
             curr = next;                // déplacer curr à next
         }
+
+        //prev devient la nouvelle tête de la liste inversée,
+        // car il pointe sur le nœud qui était à la fin de la liste avant l'inversion
         return prev;  // le nouveau head de la liste inversée.
     }
 }
