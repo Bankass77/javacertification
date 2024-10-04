@@ -31,4 +31,20 @@ public class ReverseListNode {
         // car il pointe sur le nœud qui était à la fin de la liste avant l'inversion
         return prev;  // le nouveau head de la liste inversée.
     }
+
+    public static void main(String[] args) {
+        // Créer une liste sans cycle : 1 -> 2 -> 3 -> 4 -> 5
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+        ReverseListNode reverseListNode = new ReverseListNode();
+        ListNode result = reverseListNode.reverseList(head);
+
+        while (result != null) {
+            System.out.println(result.val + " ");
+            result = result.next;
+        }
+    }
 }
