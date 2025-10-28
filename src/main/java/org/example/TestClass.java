@@ -1,6 +1,7 @@
+/*
 package org.example;
 
-import org.example.InterfaceFunctionel.Sprint;
+import org.example.java8.LambdaExample;
 import org.example.lambda.Tiger;
 
 public class TestClass {
@@ -15,10 +16,10 @@ public class TestClass {
        // float value = 102.0; // ne compile pas, car un double a été affecté à un float.
         //System.out.println(value);
 
-        Sprint  sprint=  new Tiger();
+        LambdaExample.Sprint sprint=  new Tiger();
         sprint.print(8);
 
-        Sprint sprint1= new Sprint() {
+        LambdaExample.Sprint sprint1= new LambdaExample.Sprint() {
 
             @Override
             public void print(int speed) {
@@ -30,7 +31,8 @@ public class TestClass {
 
 
         // peut être remplacer par lambda:
-        Sprint sprint2= speed -> System.out.println(speed);
+        LambdaExample.Sprint sprint2= speed -> System.out.println(speed);
     }
 
 }
+*/
