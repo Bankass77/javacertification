@@ -1,4 +1,4 @@
-package org.example.java17.sealed;
+package org.example.java17.sealed.classe;
 
 public  sealed class Mammal permits Equine {
 }

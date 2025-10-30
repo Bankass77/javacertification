@@ -1,4 +1,4 @@
-package org.example.java17.sealed;
+package org.example.java17.sealed.classe;
 
 public sealed class Snake {  // Ici la clause permits est optionel
 
