@@ -53,6 +53,14 @@ public class LongProblemsMediaExample {
             System.out.println(titles);
             System.out.println(memoiresSize);
         }
+
+        // identique à
+       /* media.forEach(o->{
+            pipeline.accept(o);
+            System.out.println(titles);
+            System.out.println(memoiresSize);
+        });*/
+
     }
 
     static class Transport {
