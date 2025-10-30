@@ -13,6 +13,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.jupiter.version>5.9.3</junit.jupiter.version>
+      <javafx.version>21.0.2</javafx.version>
     </properties>
      <dependencies>
          <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
@@ -53,6 +54,29 @@
              <artifactId>commons-cli</artifactId>
              <version>1.4</version>
          </dependency>
+       <!--Java FX dependence-->
+       <dependency>
+         <groupId>org.openjfx</groupId>
+         <artifactId>javafx-controls</artifactId>
+         <version>${javafx.version}</version>
+       </dependency>
+       <dependency>
+         <groupId>org.openjfx</groupId>
+         <artifactId>javafx-fxml</artifactId>
+         <version>${javafx.version}</version>
+       </dependency>
      </dependencies>
+     <build>
+       <plugins>
+         <plugin>
+           <groupId>org.openjfx</groupId>
+           <artifactId>javafx-maven-plugin</artifactId>
+           <version>0.0.8</version>
+           <configuration>
+             <mainClass>org.example.java17.chapter7.innnerClass.ClassAnonymExample</mainClass>
+           </configuration>
+         </plugin>
+       </plugins>
+     </build>
 
 </project>

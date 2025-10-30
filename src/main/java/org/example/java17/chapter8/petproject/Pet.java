@@ -1,0 +1,38 @@
+package org.example.java17.chapter8.petproject;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Pet {
+    String name;
+    String animal;
+    String breed;
+    String color;
+    double price;
+
+   static List<Pet> pets= new ArrayList<>();
+
+    public Pet(final String name, final String animal, final String breed, final String color, final double price) {
+        this.name = name;
+        this.animal = animal;
+        this.breed = breed;
+        this.color = color;
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return  name + ":" + " a " + color + " " + breed +
+                " " +  animal + " for $" + price;
+
+    }
+
+    @Override
+    public boolean equals(final Object o) {
+
+        Pet pet = (Pet) o;
+        return  animal.equals(pet.animal) && breed.equals(pet.breed);
+    }
+
+
+}
