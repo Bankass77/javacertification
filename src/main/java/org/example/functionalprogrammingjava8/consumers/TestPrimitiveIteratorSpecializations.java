@@ -1,0 +1,26 @@
+package org.example.functionalprogrammingjava8.consumers;
+
+import java.util.function.DoubleConsumer;
+import java.util.function.IntConsumer;
+import java.util.function.LongConsumer;
+
+public class TestPrimitiveIteratorSpecializations {
+    public static void main(String[] args) {
+
+        IntIterator iit = new IntIterator(1, 2, 3, 4, 5);
+
+        iit.forEachRemaining((IntConsumer) System.out::println);
+
+        System.out.println();
+
+        LongIterator lit = new LongIterator(6, 7, 8, 9, 10);
+
+        lit.forEachRemaining((LongConsumer) System.out::println);
+        System.out.println();
+
+        DoubleIterator dit = new DoubleIterator(20.1, 21.2, 22.3, 23.4, 24.5);
+
+        dit.forEachRemaining((DoubleConsumer) System.out::println);
+
+    }
+}
